@@ -1,0 +1,49 @@
+{
+  "name": "kmalarifi/payment-gateways",
+  "description": "payment gateways library for Laravel 11.",
+  "type": "library",
+  "require": {
+    "php": "^8.2",
+    "illuminate/support": "^11.0",
+    "illuminate/http": "^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kmalarifi\\PaymentGateways\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kmalarifi\\PaymentGateways\\RequestGatewayResolverServiceProvider",
+        "Kmalarifi\\PaymentGateways\\RequestGatewayResolverServiceProvider"
+      ]
+    }
+  },
+  "authors": [
+    {
+      "name": "Khalid Al‑Arifi",
+      "email": "kmalarifi97@gmail.com"
+    },
+    {
+      "name": "osamah alzahrani",
+      "email": ""
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require-dev": {
+    "pestphp/pest": "^3.8",
+    "orchestra/testbench": "9.13.1"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
